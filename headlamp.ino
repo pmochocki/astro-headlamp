@@ -76,7 +76,7 @@ int main(void)
     bool long_press = 0;                    // falg if the button was pressed long
     
     OCR0A = brightness_level[brightness_index];    // set inital red led brightness after reset 
-    PORTB |=  (1 << WHITE_LED_PIN);           // turn white led off
+    PORTB |=  WHITE_LED_PIN;                // turn white led off
 
     // endless loop
     while(1)
